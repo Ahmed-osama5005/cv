@@ -1,0 +1,105 @@
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  /* عام */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /* NAV */
+  nav {
+    padding: 1rem;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* HERO */
+  #hero {
+    padding: 6rem 1rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+  }
+
+  .hero-stats {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  /* GRID */
+  .about-grid,
+  .skills-grid,
+  .projects-grid,
+  .edu-grid,
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* CARDS */
+  .project-card,
+  .skill-category,
+  .edu-card {
+    padding: 1.2rem;
+  }
+
+  /* TEXT */
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  /* BUTTONS */
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  /* تحسين الأداء */
+  .cursor-glow {
+    display: none;
+  }
+}
+
+/* TOUCH تحسين */
+button, .btn-primary, .btn-outline {
+  min-height: 40px;
+}
+
+/* منع تحديد بالخطأ */
+button {
+  user-select: none;
+}
+
+/* تحسين الخط */
+body {
+  -webkit-font-smoothing: antialiased;
+}
